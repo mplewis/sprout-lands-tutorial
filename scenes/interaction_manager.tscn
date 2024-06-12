@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmfuuqml0oaym"]
+[gd_scene load_steps=3 format=3 uid="uid://bmfuuqml0oaym"]
 
 [ext_resource type="Script" path="res://scripts/interaction_manager.gd" id="1_dyxn6"]
+[ext_resource type="Theme" uid="uid://bv3st3iksuyej" path="res://themes/theme.tres" id="2_p0470"]
 
 [node name="InteractionManager" type="Node2D"]
 script = ExtResource("1_dyxn6")
@@ -10,6 +11,6 @@ z_index = 20
 offset_left = -52.0
 offset_right = 53.0
 offset_bottom = 23.0
-theme_override_font_sizes/font_size = 12
+theme = ExtResource("2_p0470")
 text = "[E] to interact"
 horizontal_alignment = 1

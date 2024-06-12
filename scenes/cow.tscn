@@ -1,8 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://buuxjkp60hncq"]
+[gd_scene load_steps=17 format=3 uid="uid://buuxjkp60hncq"]
 
 [ext_resource type="Script" path="res://scripts/cow.gd" id="1_31mg2"]
 [ext_resource type="Texture2D" uid="uid://vqfsqsf0sq8r" path="res://assets/Characters/Free Cow Sprites.png" id="2_43uro"]
 [ext_resource type="PackedScene" uid="uid://cer6254tcgimy" path="res://scenes/interaction_area.tscn" id="3_2nvfc"]
+[ext_resource type="Theme" uid="uid://bv3st3iksuyej" path="res://themes/theme.tres" id="4_0w3yd"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xdlck"]
 size = Vector2(16, 13)
@@ -116,6 +117,7 @@ offset_left = -37.0
 offset_top = -8.0
 offset_right = 37.0
 offset_bottom = 4.0
+theme = ExtResource("4_0w3yd")
 theme_override_font_sizes/font_size = 8
 text = "moo!
 "

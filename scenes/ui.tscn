@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://ovab2iuasvrb"]
+
+[ext_resource type="Script" path="res://scripts/ui.gd" id="1_cxvui"]
+[ext_resource type="Theme" uid="uid://bv3st3iksuyej" path="res://themes/theme.tres" id="1_tbc7w"]
+
+[node name="UI" type="CanvasLayer"]
+script = ExtResource("1_cxvui")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 98.0
+offset_bottom = 40.0
+
+[node name="MarginContainer" type="MarginContainer" parent="Control"]
+layout_mode = 0
+offset_right = 98.0
+offset_bottom = 40.0
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer"]
+layout_mode = 2
+
+[node name="InventoryLabel" type="Label" parent="Control/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme = ExtResource("1_tbc7w")
+text = "[Inventory]"

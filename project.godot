@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Sprout Lands Tutorial"
-run/main_scene="res://game.tscn"
+run/main_scene="res://scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 InteractionManager="*res://scenes/interaction_manager.tscn"
 InventoryManager="*res://scripts/inventory_manager.gd"
+UiManager="*res://scripts/ui_manager.gd"
 
 [display]
 

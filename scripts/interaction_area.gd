@@ -18,10 +18,8 @@ var non_interactable_message: Callable = func() -> String:
 
 ## Register with the InteractionManager when the player enters this area.
 func _on_body_entered(_body: Node2D):
-	print("registered %s" % self)
 	InteractionManager.register(self)
 
 ## Deregister from the InteractionManager when the player exits this area.
 func _on_body_exited(_body: Node2D):
-	print("deregistered %s" % self)
 	InteractionManager.deregister(self)
