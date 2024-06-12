@@ -11,5 +11,7 @@ func _ready():
 
 
 func _inventory_changed():
-	var lines = inv_mgr.inv.keys().map(func(x): return "%s: %d" % [inv_mgr.names[x], inv_mgr.inv[x]])
+	var lines = inv_mgr.inv.keys().filter(func(x): return inv_mgr.inv[x] > 0).map(
+		func(x): return "%s: %d" % [inv_mgr.names[x], inv_mgr.inv[x]]
+	)
 	inv_label.text = "\n".join(lines)
