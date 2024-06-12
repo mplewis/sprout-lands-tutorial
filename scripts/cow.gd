@@ -16,7 +16,9 @@ var next_at := 0
 
 
 func _ready():
-	intr_area.interact = Callable(self, "_on_interact")
+	intr_area.interactable = Callable(self, "_interactable")
+	intr_area.interact = Callable(self, "_interact")
+	intr_area.non_interactable_message = Callable(self, "_non_interactable_message")
 
 
 func _physics_process(_delta):
@@ -43,7 +45,16 @@ func _physics_process(_delta):
 		state_mach.travel("idle")
 
 
-func _on_interact():
+func _interactable():
+	return InventoryManager.has(InventoryManager.Item.GRAIN, 1)
+
+
+func _interact():
+	InventoryManager.take(InventoryManager.Item.GRAIN, 1)
 	moo_label.visible = true
 	await get_tree().create_timer(2).timeout
 	moo_label.visible = false
+
+
+func _non_interactable_message():
+	return "The cow looks hungry."

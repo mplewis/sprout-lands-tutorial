@@ -9,7 +9,7 @@ const LABEL_SPACING = -10
 ## The currently active interactable areas.
 var active_areas: Array[InteractionArea] = []
 ## Whether the player can interact with the current area, or not due to a current ongoing interaction.
-var can_interact := true
+var idle := true
 ## The name of the button the player presses to interact.
 var input_name := ""
 
@@ -24,41 +24,6 @@ func deregister(area: InteractionArea):
 	active_areas.erase(area)
 
 
-func _ready():
-	var interact: InputEvent = InputMap.action_get_events("ui_interact")[0]
-	var keycode = DisplayServer.keyboard_get_keycode_from_physical(interact["physical_keycode"])
-	input_name = OS.get_keycode_string(keycode)
-
-
-func _process(_delta):
-	var aarea := _active_area()
-	if !aarea:
-		label.hide()
-		return
-
-	if !can_interact:
-		return
-
-	label.text = "[%s] to %s" % [input_name, aarea.action_name]
-	label.global_position = aarea.global_position - Vector2(label.size.x / 2, LABEL_SPACING)
-	label.show()
-
-
-func _input(event):
-	if !event.is_action_pressed("ui_interact"):
-		return
-	if !can_interact:
-		return
-	var aarea := _active_area()
-	if !aarea:
-		return
-
-	label.hide()
-	can_interact = false
-	await aarea.interact.call()
-	can_interact = true
-
-
 ## Get the closest active area to the player, or null if there are none.
 func _active_area() -> InteractionArea:
 	if active_areas.size() == 0:
@@ -71,3 +36,44 @@ func _active_area() -> InteractionArea:
 func _dist_to_player(a: InteractionArea, b: InteractionArea):
 	var ploc := player.global_position
 	return a.global_position.distance_to(ploc) - b.global_position.distance_to(ploc)
+
+
+func _ready():
+	var interact: InputEvent = InputMap.action_get_events("ui_interact")[0]
+	var keycode = DisplayServer.keyboard_get_keycode_from_physical(interact["physical_keycode"])
+	input_name = OS.get_keycode_string(keycode)
+
+
+func _process(_delta):
+	var aarea := _active_area()
+	if !aarea:
+		label.hide()
+		return
+
+	if !idle:
+		return
+
+	if aarea.interactable.call():
+		label.text = "[%s] to %s" % [input_name, aarea.action_name]
+	else:
+		label.text = "(%s)" % aarea.non_interactable_message.call()
+
+	label.global_position = aarea.global_position - Vector2(label.size.x / 2, LABEL_SPACING)
+	label.show()
+
+
+func _input(event):
+	if !event.is_action_pressed("ui_interact"):
+		return
+	if !idle:
+		return
+	var aarea := _active_area()
+	if !aarea:
+		return
+	if !aarea.interactable.call():
+		return
+
+	label.hide()
+	idle = false
+	await aarea.interact.call()
+	idle = true
