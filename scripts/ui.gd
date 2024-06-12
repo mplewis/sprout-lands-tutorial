@@ -5,7 +5,6 @@ extends Node
 
 
 func _ready():
-	print(inv_label)
 	inv_mgr.inventory_changed.connect(_inventory_changed)
 	_inventory_changed()
 
