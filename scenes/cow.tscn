@@ -106,7 +106,7 @@ position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_xdlck")
 
 [node name="InteractionArea" parent="." instance=ExtResource("3_2nvfc")]
-action_name = "pet"
+action_name = "Feed"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
 shape = SubResource("CircleShape2D_eyjt6")

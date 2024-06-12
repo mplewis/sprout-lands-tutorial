@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://72r4qvxixlae"]
+[gd_scene load_steps=18 format=3 uid="uid://72r4qvxixlae"]
 
 [ext_resource type="Texture2D" uid="uid://d0tydqyv48hqb" path="res://assets/Tilesets/Grass.png" id="1_x30gs"]
 [ext_resource type="Texture2D" uid="uid://bqt8mnpb7djbw" path="res://assets/Tilesets/Fences.png" id="2_4oepe"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://6x6rwws7i6tk" path="res://scenes/player.tscn" id="7_fiyba"]
 [ext_resource type="PackedScene" uid="uid://buuxjkp60hncq" path="res://scenes/cow.tscn" id="8_0raps"]
 [ext_resource type="PackedScene" uid="uid://ovab2iuasvrb" path="res://scenes/ui.tscn" id="9_70s11"]
+[ext_resource type="PackedScene" uid="uid://b6a1k53wwlveq" path="res://scenes/chest.tscn" id="10_2xrl8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ufeg"]
 texture = ExtResource("1_x30gs")
@@ -868,8 +869,10 @@ sources/5 = SubResource("TileSetAtlasSource_y5sl3")
 y_sort_enabled = true
 position = Vector2(130, 137)
 
+[node name="UI" parent="." groups=["ui"] instance=ExtResource("9_70s11")]
+
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(112, 94)
+position = Vector2(336, 221)
 position_smoothing_enabled = true
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -887,7 +890,7 @@ layer_2/y_sort_enabled = true
 layer_2/tile_data = PackedInt32Array(1048587, 2, 3, 1048588, 65538, 3, 1048589, 65538, 3, 1048590, 65538, 3, 1048591, 131074, 3)
 
 [node name="Player" parent="." instance=ExtResource("7_fiyba")]
-position = Vector2(112, 94)
+position = Vector2(336, 221)
 
 [node name="NPCs" type="Node2D" parent="."]
 
@@ -898,7 +901,7 @@ position = Vector2(81, 199)
 position = Vector2(260, 173)
 
 [node name="Cow3" parent="NPCs" instance=ExtResource("8_0raps")]
-position = Vector2(393, 106)
+position = Vector2(474, 131)
 
 [node name="Cow4" parent="NPCs" instance=ExtResource("8_0raps")]
 position = Vector2(584, 275)
@@ -906,4 +909,9 @@ position = Vector2(584, 275)
 [node name="Cow5" parent="NPCs" instance=ExtResource("8_0raps")]
 position = Vector2(388, 321)
 
-[node name="UI" parent="." groups=["ui"] instance=ExtResource("9_70s11")]
+[node name="Items" type="Node2D" parent="."]
+
+[node name="Chest" parent="Items" instance=ExtResource("10_2xrl8")]
+position = Vector2(387, 94)
+item_name = "Grain"
+count = 10

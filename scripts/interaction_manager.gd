@@ -35,7 +35,11 @@ func _active_area() -> InteractionArea:
 ## Sort interactable areas by distance to the player, ascending.
 func _dist_to_player(a: InteractionArea, b: InteractionArea):
 	var ploc := player.global_position
-	return a.global_position.distance_to(ploc) - b.global_position.distance_to(ploc)
+	var dist_a := a.global_position.distance_to(ploc)
+	var dist_b := b.global_position.distance_to(ploc)
+	# FIXME: Why do these flip-flop?
+	# print("a: %0.2f, b: %0.2f" % [dist_a, dist_b])
+	return dist_a - dist_b
 
 
 func _ready():
@@ -54,9 +58,13 @@ func _process(_delta):
 		return
 
 	if aarea.interactable.call():
-		label.text = "[%s] to %s" % [input_name, aarea.action_name]
+		label.text = "[%s] %s" % [input_name, aarea.action_name]
 	else:
-		label.text = "(%s)" % aarea.non_interactable_message.call()
+		var msg = aarea.non_interactable_message.call()
+		if msg == "":
+			label.text = ""
+		else:
+			label.text = "(%s)" % aarea.non_interactable_message.call()
 
 	label.global_position = aarea.global_position - Vector2(label.size.x / 2, LABEL_SPACING)
 	label.show()

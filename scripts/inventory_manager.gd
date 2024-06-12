@@ -9,12 +9,19 @@ enum Item {
 	GRAIN,
 }
 
-var names := {
+## Lookup item names by their type.
+var to_name := {
 	Item.COIN: "Coin",
 	Item.GRAIN: "Grain",
 }
 
-## The player's inventory.
+## Lookup items by their name.
+var to_item := {
+	"Coin": Item.COIN,
+	"Grain": Item.GRAIN,
+}
+
+## The player's initial inventory.
 var inv := {
 	Item.COIN: 0,
 	Item.GRAIN: 2,
