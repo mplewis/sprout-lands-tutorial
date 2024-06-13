@@ -41,3 +41,4 @@ text = "[Inventory]"
 [node name="UI_1x" type="CanvasLayer" parent="."]
 
 [node name="Chat" parent="UI_1x" instance=ExtResource("3_2oq5b")]
+visible = false

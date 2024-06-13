@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://72r4qvxixlae"]
+[gd_scene load_steps=19 format=3 uid="uid://72r4qvxixlae"]
 
 [ext_resource type="Texture2D" uid="uid://d0tydqyv48hqb" path="res://assets/Tilesets/Grass.png" id="1_x30gs"]
 [ext_resource type="Texture2D" uid="uid://bqt8mnpb7djbw" path="res://assets/Tilesets/Fences.png" id="2_4oepe"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://bveua7wu12oit" path="res://assets/Tilesets/Wooden House.png" id="6_pjvve"]
 [ext_resource type="PackedScene" uid="uid://6x6rwws7i6tk" path="res://scenes/player.tscn" id="7_fiyba"]
 [ext_resource type="PackedScene" uid="uid://buuxjkp60hncq" path="res://scenes/cow.tscn" id="8_0raps"]
+[ext_resource type="PackedScene" uid="uid://dcts70hd3n28r" path="res://scenes/friend.tscn" id="8_wqi0g"]
 [ext_resource type="PackedScene" uid="uid://ovab2iuasvrb" path="res://scenes/ui.tscn" id="9_70s11"]
 [ext_resource type="PackedScene" uid="uid://b6a1k53wwlveq" path="res://scenes/chest.tscn" id="10_2xrl8"]
 
@@ -897,6 +898,9 @@ position = Vector2(336, 221)
 
 [node name="NPCs" type="Node2D" parent="PlayArea"]
 y_sort_enabled = true
+
+[node name="Friend" parent="PlayArea/NPCs" instance=ExtResource("8_wqi0g")]
+position = Vector2(419, 177)
 
 [node name="Cow" parent="PlayArea/NPCs" instance=ExtResource("8_0raps")]
 position = Vector2(81, 199)

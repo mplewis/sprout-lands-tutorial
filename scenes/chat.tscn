@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://dt16pjc0lgxlr"]
 
 [ext_resource type="Theme" uid="uid://bv3st3iksuyej" path="res://themes/theme.tres" id="1_lyjwy"]
-[ext_resource type="Texture2D" path="res://assets/ui/dialogue-next.png" id="1_rnsoe"]
+[ext_resource type="Texture2D" uid="uid://u0o8qgccs5df" path="res://assets/ui/dialogue-next.png" id="1_rnsoe"]
 
 [node name="Chat" type="Control"]
 layout_mode = 3
