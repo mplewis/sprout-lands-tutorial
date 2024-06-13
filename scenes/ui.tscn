@@ -1,18 +1,27 @@
-[gd_scene load_steps=3 format=3 uid="uid://ovab2iuasvrb"]
+[gd_scene load_steps=4 format=3 uid="uid://ovab2iuasvrb"]
 
 [ext_resource type="Script" path="res://scripts/ui.gd" id="1_cxvui"]
 [ext_resource type="Theme" uid="uid://bv3st3iksuyej" path="res://themes/theme.tres" id="1_tbc7w"]
+[ext_resource type="PackedScene" uid="uid://dt16pjc0lgxlr" path="res://scenes/chat.tscn" id="3_2oq5b"]
 
-[node name="UI" type="CanvasLayer"]
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="UI_4x" type="CanvasLayer" parent="."]
+scale = Vector2(4, 4)
+transform = Transform2D(4, 0, 0, 4, 0, 0)
 script = ExtResource("1_cxvui")
 
-[node name="Control" type="Control" parent="."]
+[node name="Control" type="Control" parent="UI_4x"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 98.0
 offset_bottom = 40.0
 
-[node name="MarginContainer" type="MarginContainer" parent="Control"]
+[node name="MarginContainer" type="MarginContainer" parent="UI_4x/Control"]
 layout_mode = 0
 offset_right = 98.0
 offset_bottom = 40.0
@@ -21,10 +30,14 @@ theme_override_constants/margin_top = 12
 theme_override_constants/margin_right = 12
 theme_override_constants/margin_bottom = 12
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="UI_4x/Control/MarginContainer"]
 layout_mode = 2
 
-[node name="InventoryLabel" type="Label" parent="Control/MarginContainer/VBoxContainer"]
+[node name="InventoryLabel" type="Label" parent="UI_4x/Control/MarginContainer/VBoxContainer"]
 layout_mode = 2
 theme = ExtResource("1_tbc7w")
 text = "[Inventory]"
+
+[node name="UI_1x" type="CanvasLayer" parent="."]
+
+[node name="Chat" parent="UI_1x" instance=ExtResource("3_2oq5b")]
