@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ovab2iuasvrb"]
 
-[ext_resource type="Script" path="res://scripts/ui.gd" id="1_cxvui"]
 [ext_resource type="Theme" uid="uid://bv3st3iksuyej" path="res://themes/theme.tres" id="1_tbc7w"]
+[ext_resource type="Script" path="res://scripts/ui_4x.gd" id="1_xudmw"]
 [ext_resource type="PackedScene" uid="uid://dt16pjc0lgxlr" path="res://scenes/chat.tscn" id="3_2oq5b"]
 
 [node name="UI" type="Control"]
@@ -13,7 +13,7 @@ offset_bottom = 40.0
 [node name="UI_4x" type="CanvasLayer" parent="."]
 scale = Vector2(4, 4)
 transform = Transform2D(4, 0, 0, 4, 0, 0)
-script = ExtResource("1_cxvui")
+script = ExtResource("1_xudmw")
 
 [node name="Control" type="Control" parent="UI_4x"]
 layout_mode = 3

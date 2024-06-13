@@ -17,15 +17,17 @@ config/icon="res://icon.svg"
 
 [autoload]
 
+Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 InteractionManager="*res://scenes/interaction_manager.tscn"
 InventoryManager="*res://scripts/inventory_manager.gd"
 UiManager="*res://scripts/ui_manager.gd"
-Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 
 [dialogic]
 
 directories/dch_directory={}
-directories/dtl_directory={}
+directories/dtl_directory={
+"demo": "res://timelines/demo.dtl"
+}
 
 [display]
 
