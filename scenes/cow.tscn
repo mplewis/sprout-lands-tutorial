@@ -9,7 +9,7 @@
 size = Vector2(16, 13)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_eyjt6"]
-radius = 26.0192
+radius = 33.0
 
 [sub_resource type="Animation" id="Animation_v5x4f"]
 length = 0.001
@@ -113,12 +113,11 @@ shape = SubResource("CircleShape2D_eyjt6")
 
 [node name="MooLabel" type="Label" parent="."]
 visible = false
-offset_left = -37.0
-offset_top = -8.0
-offset_right = 37.0
+offset_left = -46.0
+offset_top = -11.0
+offset_right = 46.0
 offset_bottom = 4.0
 theme = ExtResource("4_0w3yd")
-theme_override_font_sizes/font_size = 8
 text = "moo!
 "
 horizontal_alignment = 2

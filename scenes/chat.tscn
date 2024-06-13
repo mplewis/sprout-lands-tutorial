@@ -1,0 +1,98 @@
+[gd_scene load_steps=3 format=3 uid="uid://dm6kvosxjkiwv"]
+
+[ext_resource type="Theme" uid="uid://bv3st3iksuyej" path="res://themes/theme.tres" id="1_lyjwy"]
+[ext_resource type="Texture2D" uid="uid://u0o8qgccs5df" path="res://assets/ui/dialogue-next.png" id="1_rnsoe"]
+
+[node name="Chat" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="DialogBox" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="VBoxContainer" type="VBoxContainer" parent="DialogBox"]
+layout_mode = 2
+alignment = 2
+
+[node name="BkgDark" type="ColorRect" parent="DialogBox/VBoxContainer"]
+custom_minimum_size = Vector2(2.08165e-12, 400)
+layout_mode = 2
+color = Color(0.2, 0.2, 0.2, 1)
+
+[node name="MarginContainer" type="MarginContainer" parent="DialogBox/VBoxContainer/BkgDark"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 12
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 12
+
+[node name="BkgLight" type="ColorRect" parent="DialogBox/VBoxContainer/BkgDark/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+color = Color(0.8, 0.8, 0.8, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="DialogBox/VBoxContainer/BkgDark/MarginContainer/BkgLight"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="DialogBox/VBoxContainer/BkgDark/MarginContainer/BkgLight"]
+layout_mode = 2
+offset_right = 2512.0
+offset_bottom = 376.0
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 30
+
+[node name="Label" type="Label" parent="DialogBox/VBoxContainer/BkgDark/MarginContainer/BkgLight/MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 1
+theme = ExtResource("1_lyjwy")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_outline_size = 0
+theme_override_font_sizes/font_size = 96
+text = "SEND HELP. there is a giant kitty on the loose in hyrule.
+the kitty is large and grey and very hungry
+tell the king to send cat food"
+
+[node name="NextArrow" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -86.0
+offset_top = -86.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_constants/margin_right = 36
+theme_override_constants/margin_bottom = 36
+
+[node name="TextureRect" type="TextureRect" parent="NextArrow"]
+layout_mode = 2
+texture = ExtResource("1_rnsoe")

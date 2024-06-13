@@ -246,6 +246,7 @@ platform_floor_layers = 0
 script = ExtResource("1_rg0mr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+y_sort_enabled = true
 texture = ExtResource("2_y1rwh")
 hframes = 4
 vframes = 4

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://72r4qvxixlae"]
+[gd_scene load_steps=19 format=3 uid="uid://72r4qvxixlae"]
 
 [ext_resource type="Texture2D" uid="uid://d0tydqyv48hqb" path="res://assets/Tilesets/Grass.png" id="1_x30gs"]
 [ext_resource type="Texture2D" uid="uid://bqt8mnpb7djbw" path="res://assets/Tilesets/Fences.png" id="2_4oepe"]
@@ -10,6 +10,7 @@
 [ext_resource type="PackedScene" uid="uid://buuxjkp60hncq" path="res://scenes/cow.tscn" id="8_0raps"]
 [ext_resource type="PackedScene" uid="uid://ovab2iuasvrb" path="res://scenes/ui.tscn" id="9_70s11"]
 [ext_resource type="PackedScene" uid="uid://b6a1k53wwlveq" path="res://scenes/chest.tscn" id="10_2xrl8"]
+[ext_resource type="PackedScene" uid="uid://dm6kvosxjkiwv" path="res://scenes/chat.tscn" id="11_hfna2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ufeg"]
 texture = ExtResource("1_x30gs")
@@ -871,11 +872,18 @@ position = Vector2(130, 137)
 
 [node name="UI" parent="." groups=["ui"] instance=ExtResource("9_70s11")]
 
-[node name="Camera2D" type="Camera2D" parent="."]
+[node name="Chat" parent="UI" instance=ExtResource("11_hfna2")]
+size_flags_vertical = 8
+
+[node name="Screen" type="Node2D" parent="."]
+position = Vector2(-130, -137)
+
+[node name="Camera2D" type="Camera2D" parent="Screen"]
 position = Vector2(336, 221)
+zoom = Vector2(4, 4)
 position_smoothing_enabled = true
 
-[node name="TileMap" type="TileMap" parent="."]
+[node name="TileMap" type="TileMap" parent="Screen"]
 y_sort_enabled = true
 tile_set = SubResource("TileSet_uyxxr")
 format = 2
@@ -889,29 +897,29 @@ layer_2/name = "Tall Walls"
 layer_2/y_sort_enabled = true
 layer_2/tile_data = PackedInt32Array(1048587, 2, 3, 1048588, 65538, 3, 1048589, 65538, 3, 1048590, 65538, 3, 1048591, 131074, 3)
 
-[node name="Player" parent="." instance=ExtResource("7_fiyba")]
+[node name="Player" parent="Screen" instance=ExtResource("7_fiyba")]
 position = Vector2(336, 221)
 
-[node name="NPCs" type="Node2D" parent="."]
+[node name="NPCs" type="Node2D" parent="Screen"]
 
-[node name="Cow" parent="NPCs" instance=ExtResource("8_0raps")]
+[node name="Cow" parent="Screen/NPCs" instance=ExtResource("8_0raps")]
 position = Vector2(81, 199)
 
-[node name="Cow2" parent="NPCs" instance=ExtResource("8_0raps")]
+[node name="Cow2" parent="Screen/NPCs" instance=ExtResource("8_0raps")]
 position = Vector2(260, 173)
 
-[node name="Cow3" parent="NPCs" instance=ExtResource("8_0raps")]
+[node name="Cow3" parent="Screen/NPCs" instance=ExtResource("8_0raps")]
 position = Vector2(474, 131)
 
-[node name="Cow4" parent="NPCs" instance=ExtResource("8_0raps")]
+[node name="Cow4" parent="Screen/NPCs" instance=ExtResource("8_0raps")]
 position = Vector2(584, 275)
 
-[node name="Cow5" parent="NPCs" instance=ExtResource("8_0raps")]
+[node name="Cow5" parent="Screen/NPCs" instance=ExtResource("8_0raps")]
 position = Vector2(388, 321)
 
-[node name="Items" type="Node2D" parent="."]
+[node name="Items" type="Node2D" parent="Screen"]
 
-[node name="Chest" parent="Items" instance=ExtResource("10_2xrl8")]
+[node name="Chest" parent="Screen/Items" instance=ExtResource("10_2xrl8")]
 position = Vector2(387, 94)
 item_name = "Grain"
 count = 10
