@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://72r4qvxixlae"]
+[gd_scene load_steps=20 format=3 uid="uid://72r4qvxixlae"]
 
 [ext_resource type="Texture2D" uid="uid://d0tydqyv48hqb" path="res://assets/sprout_lands/tilesets/Grass.png" id="1_x30gs"]
 [ext_resource type="Texture2D" uid="uid://bqt8mnpb7djbw" path="res://assets/sprout_lands/tilesets/Fences.png" id="2_4oepe"]
@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dcts70hd3n28r" path="res://scenes/friend.tscn" id="8_wqi0g"]
 [ext_resource type="PackedScene" uid="uid://ovab2iuasvrb" path="res://scenes/ui.tscn" id="9_70s11"]
 [ext_resource type="PackedScene" uid="uid://b6a1k53wwlveq" path="res://scenes/chest.tscn" id="10_2xrl8"]
+[ext_resource type="PackedScene" uid="uid://iwy7isdul2yg" path="res://scenes/bucket.tscn" id="11_u7j1n"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0ufeg"]
 texture = ExtResource("1_x30gs")
@@ -924,6 +925,9 @@ y_sort_enabled = true
 position = Vector2(387, 94)
 item_name = "Grain"
 count = 10
+
+[node name="Bucket" parent="PlayArea/Items" instance=ExtResource("11_u7j1n")]
+position = Vector2(404, 243)
 
 [node name="UI" parent="." groups=["ui"] instance=ExtResource("9_70s11")]
 offset_left = -130.0

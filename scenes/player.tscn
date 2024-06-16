@@ -1,7 +1,8 @@
-[gd_scene load_steps=28 format=3 uid="uid://6x6rwws7i6tk"]
+[gd_scene load_steps=32 format=3 uid="uid://6x6rwws7i6tk"]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_rg0mr"]
 [ext_resource type="Texture2D" uid="uid://py0gadsicogu" path="res://assets/sprout_lands/characters/Basic Charakter Spritesheet.png" id="2_y1rwh"]
+[ext_resource type="Texture2D" uid="uid://c2v7lkvinb42f" path="res://assets/aseprite/dagger.png" id="3_2806q"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fjern"]
 size = Vector2(8, 6)
@@ -11,7 +12,7 @@ length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("Character:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -28,7 +29,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("Character:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -45,7 +46,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("Character:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -62,7 +63,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("Character:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -79,7 +80,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("Character:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -96,7 +97,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("Character:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -113,7 +114,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("Character:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -130,7 +131,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("Character:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -147,7 +148,7 @@ loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/path = NodePath("Character:frame")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -239,21 +240,60 @@ states/walk/position = Vector2(868, 99.2891)
 transitions = ["Start", "idle", SubResource("AnimationNodeStateMachineTransition_0rxlg"), "idle", "walk", SubResource("AnimationNodeStateMachineTransition_ex0i1"), "walk", "idle", SubResource("AnimationNodeStateMachineTransition_53pde")]
 graph_offset = Vector2(335.062, 7.845)
 
+[sub_resource type="Animation" id="Animation_r3r73"]
+length = 0.26667
+step = 0.0333333
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.0333333, 0.0666667, 0.1, 0.133333, 0.166667),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(0, 0), Vector2(1, 0), Vector2(2, 0), Vector2(3, 0), Vector2(4, 0), Vector2(5, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../..:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.266667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [true, false]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_bwi22"]
+_data = {
+"attack": SubResource("Animation_r3r73")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l3t2l"]
+size = Vector2(6, 3)
+
 [node name="Player" type="CharacterBody2D" groups=["player"]]
 y_sort_enabled = true
 collision_layer = 3
 platform_floor_layers = 0
 script = ExtResource("1_rg0mr")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5)
+shape = SubResource("RectangleShape2D_fjern")
+
+[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
+remote_path = NodePath("../../Camera2D")
+
+[node name="Character" type="Sprite2D" parent="."]
 y_sort_enabled = true
 texture = ExtResource("2_y1rwh")
 hframes = 4
 vframes = 4
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, 5)
-shape = SubResource("RectangleShape2D_fjern")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -267,5 +307,28 @@ anim_player = NodePath("../AnimationPlayer")
 parameters/idle/blend_position = Vector2(0, 0.440471)
 parameters/walk/blend_position = Vector2(-0.00315124, 0.454604)
 
-[node name="RemoteTransform2D" type="RemoteTransform2D" parent="."]
-remote_path = NodePath("../../Camera2D")
+[node name="DaggerPosition" type="Node2D" parent="."]
+visible = false
+z_index = 1
+position = Vector2(4, 3)
+
+[node name="Dagger" type="Node2D" parent="DaggerPosition"]
+position = Vector2(5, 0)
+
+[node name="DaggerSprite" type="Sprite2D" parent="DaggerPosition/Dagger"]
+texture = ExtResource("3_2806q")
+offset = Vector2(1, 0.5)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="DaggerPosition/Dagger"]
+root_node = NodePath("../DaggerSprite")
+libraries = {
+"": SubResource("AnimationLibrary_bwi22")
+}
+
+[node name="Area2D" type="Area2D" parent="DaggerPosition/Dagger"]
+collision_layer = 5
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DaggerPosition/Dagger/Area2D"]
+position = Vector2(3, 0.5)
+shape = SubResource("RectangleShape2D_l3t2l")
