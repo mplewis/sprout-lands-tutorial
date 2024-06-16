@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2gi7papqbbj8"
-path="res://.godot/imported/Free Chicken Sprites.png-22c4fea3f460bcb2e05e259f2ba3d648.ctex"
+uid="uid://ckl8my3qdlp45"
+path="res://.godot/imported/Basic_Plants.png-9b452e9b178d25fd66a34952570e3b95.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Characters/Free Chicken Sprites.png"
-dest_files=["res://.godot/imported/Free Chicken Sprites.png-22c4fea3f460bcb2e05e259f2ba3d648.ctex"]
+source_file="res://assets/x_objects/Basic_Plants.png"
+dest_files=["res://.godot/imported/Basic_Plants.png-9b452e9b178d25fd66a34952570e3b95.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8qsx6212572k"
-path="res://.godot/imported/Bitmask references 2.png-d6da52a05f39fd0ba8e1d489f3c281bc.ctex"
+uid="uid://basmmlu86yxm7"
+path="res://.godot/imported/Water.png-9edc7520e0e3b33f3360b37d2c69dbbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Tilesets/Bitmask references 2.png"
-dest_files=["res://.godot/imported/Bitmask references 2.png-d6da52a05f39fd0ba8e1d489f3c281bc.ctex"]
+source_file="res://assets/x_tilesets/Water.png"
+dest_files=["res://.godot/imported/Water.png-9edc7520e0e3b33f3360b37d2c69dbbb.ctex"]
 
 [params]
 

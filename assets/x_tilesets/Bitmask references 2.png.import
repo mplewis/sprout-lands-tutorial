@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boeat33acrvq5"
-path="res://.godot/imported/Simple_Milk_and_grass_item.png-c94ed42018f3fdb5f45b90f31ac09683.ctex"
+uid="uid://8qsx6212572k"
+path="res://.godot/imported/Bitmask references 2.png-b432c4136a94502f6f3bc52156f810e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Objects/Simple_Milk_and_grass_item.png"
-dest_files=["res://.godot/imported/Simple_Milk_and_grass_item.png-c94ed42018f3fdb5f45b90f31ac09683.ctex"]
+source_file="res://assets/x_tilesets/Bitmask references 2.png"
+dest_files=["res://.godot/imported/Bitmask references 2.png-b432c4136a94502f6f3bc52156f810e1.ctex"]
 
 [params]
 
