@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfv1rx75iwnoq"
-path="res://.godot/imported/Basic Charakter Actions.png-d1d7726eb1f21044e29a8b3b32b7ddd3.ctex"
+uid="uid://b8b7xnan7wmoe"
+path="res://.godot/imported/Basic_Furniture.png-c00bc96b2fafdf4501c11d589816afd1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/x_characters/Basic Charakter Actions.png"
-dest_files=["res://.godot/imported/Basic Charakter Actions.png-d1d7726eb1f21044e29a8b3b32b7ddd3.ctex"]
+source_file="res://assets/objects/Basic_Furniture.png"
+dest_files=["res://.godot/imported/Basic_Furniture.png-c00bc96b2fafdf4501c11d589816afd1.ctex"]
 
 [params]
 

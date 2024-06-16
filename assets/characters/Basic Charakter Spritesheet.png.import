@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhrbxki67ja2c"
-path="res://.godot/imported/Egg_item.png-da06d62c86526e8bf1d6ce3506147a20.ctex"
+uid="uid://py0gadsicogu"
+path="res://.godot/imported/Basic Charakter Spritesheet.png-08c377e10cbb1ff3c9b1378fd085b9f7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/x_objects/Egg_item.png"
-dest_files=["res://.godot/imported/Egg_item.png-da06d62c86526e8bf1d6ce3506147a20.ctex"]
+source_file="res://assets/characters/Basic Charakter Spritesheet.png"
+dest_files=["res://.godot/imported/Basic Charakter Spritesheet.png-08c377e10cbb1ff3c9b1378fd085b9f7.ctex"]
 
 [params]
 

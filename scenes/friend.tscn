@@ -1,7 +1,7 @@
 [gd_scene load_steps=30 format=3 uid="uid://dcts70hd3n28r"]
 
 [ext_resource type="Script" path="res://scripts/friend.gd" id="1_iy73j"]
-[ext_resource type="Texture2D" uid="uid://c4nsq2vcn5m7g" path="res://assets/Characters/Basic Charakter Spritesheet Orange.png" id="2_bgkt4"]
+[ext_resource type="Texture2D" uid="uid://c4nsq2vcn5m7g" path="res://assets/characters/Basic Charakter Spritesheet Orange.png" id="2_bgkt4"]
 [ext_resource type="PackedScene" uid="uid://cer6254tcgimy" path="res://scenes/interaction_area.tscn" id="3_ows6u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_fjern"]

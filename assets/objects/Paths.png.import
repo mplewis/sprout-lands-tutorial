@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2q6nlhut3o6p"
-path="res://.godot/imported/Egg_And_Nest.png-d993b6bbdbb99ba66361829b138005d6.ctex"
+uid="uid://3bn20sa1raml"
+path="res://.godot/imported/Paths.png-5aadc1a02acd6d1bcb62615545a59b54.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/x_characters/Egg_And_Nest.png"
-dest_files=["res://.godot/imported/Egg_And_Nest.png-d993b6bbdbb99ba66361829b138005d6.ctex"]
+source_file="res://assets/objects/Paths.png"
+dest_files=["res://.godot/imported/Paths.png-5aadc1a02acd6d1bcb62615545a59b54.ctex"]
 
 [params]
 

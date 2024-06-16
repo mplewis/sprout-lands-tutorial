@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://b6a1k53wwlveq"]
 
-[ext_resource type="Texture2D" uid="uid://b0num0mk26gm4" path="res://assets/Objects/Chest.png" id="1_4vdmd"]
+[ext_resource type="Texture2D" uid="uid://b0num0mk26gm4" path="res://assets/objects/Chest.png" id="1_4vdmd"]
 [ext_resource type="Script" path="res://scripts/chest.gd" id="1_rvqaq"]
 [ext_resource type="PackedScene" uid="uid://cer6254tcgimy" path="res://scenes/interaction_area.tscn" id="2_rvd03"]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4nsq2vcn5m7g"
-path="res://.godot/imported/Basic Charakter Spritesheet Orange.png-fb47279914107b0f8c53745e23cb2e66.ctex"
+uid="uid://buubhlypqtsjv"
+path="res://.godot/imported/Basic_Grass_Biom_things.png-3fb40c67fdb267c8c2864ee9f5c19d45.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/x_characters/Basic Charakter Spritesheet Orange.png"
-dest_files=["res://.godot/imported/Basic Charakter Spritesheet Orange.png-fb47279914107b0f8c53745e23cb2e66.ctex"]
+source_file="res://assets/objects/Basic_Grass_Biom_things.png"
+dest_files=["res://.godot/imported/Basic_Grass_Biom_things.png-3fb40c67fdb267c8c2864ee9f5c19d45.ctex"]
 
 [params]
 

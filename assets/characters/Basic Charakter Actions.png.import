@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ckl8my3qdlp45"
-path="res://.godot/imported/Basic_Plants.png-9b452e9b178d25fd66a34952570e3b95.ctex"
+uid="uid://cfv1rx75iwnoq"
+path="res://.godot/imported/Basic Charakter Actions.png-af7edafe7d9ab71a1443c99c48e160c2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/x_objects/Basic_Plants.png"
-dest_files=["res://.godot/imported/Basic_Plants.png-9b452e9b178d25fd66a34952570e3b95.ctex"]
+source_file="res://assets/characters/Basic Charakter Actions.png"
+dest_files=["res://.godot/imported/Basic Charakter Actions.png-af7edafe7d9ab71a1443c99c48e160c2.ctex"]
 
 [params]
 

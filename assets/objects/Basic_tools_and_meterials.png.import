@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b32qcml6r2xir"
-path="res://.godot/imported/Bitmask references 1.png-0dcace121499a93860b77b3652239c9d.ctex"
+uid="uid://cr3bc2plg5csf"
+path="res://.godot/imported/Basic_tools_and_meterials.png-b8fdfcd02418d3aed1fdd871f113c8d8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/x_tilesets/Bitmask references 1.png"
-dest_files=["res://.godot/imported/Bitmask references 1.png-0dcace121499a93860b77b3652239c9d.ctex"]
+source_file="res://assets/objects/Basic_tools_and_meterials.png"
+dest_files=["res://.godot/imported/Basic_tools_and_meterials.png-b8fdfcd02418d3aed1fdd871f113c8d8.ctex"]
 
 [params]
 
