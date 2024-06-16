@@ -8,8 +8,11 @@ const LABEL_SPACING = -10
 
 ## The currently active interactable areas.
 var active_areas: Array[InteractionArea] = []
-## Whether the player can interact with the current area, or not due to a current ongoing interaction.
+## Whether the player can interact with the current area,
+## or not due to a current ongoing interaction.
 var idle := true
+## Whether the player is in the middle of a conversation.
+var talking := false
 ## The name of the button the player presses to interact.
 var input_name := ""
 
@@ -26,6 +29,8 @@ func deregister(area: InteractionArea):
 
 ## Get the closest active area to the player, or null if there are none.
 func _active_area() -> InteractionArea:
+	if talking:
+		return null  # can't interact during a conversation
 	if active_areas.size() == 0:
 		return null
 	active_areas.sort_custom(_dist_to_player)
@@ -46,6 +51,9 @@ func _ready():
 	var interact: InputEvent = InputMap.action_get_events("ui_interact")[0]
 	var keycode = DisplayServer.keyboard_get_keycode_from_physical(interact["physical_keycode"])
 	input_name = OS.get_keycode_string(keycode)
+
+	Dialogic.timeline_started.connect(func(): talking = true)
+	Dialogic.timeline_ended.connect(func(): talking = false)
 
 
 func _process(_delta):
@@ -73,10 +81,10 @@ func _process(_delta):
 func _input(event):
 	if !event.is_action_pressed("ui_interact"):
 		return
-
-	Dialogic.handle_next_event()
-
+	Dialogic.handle_next_event()  # interact to go to next dialogue screen
 	if !idle:
+		return
+	if talking:
 		return
 	var aarea := _active_area()
 	if !aarea:
