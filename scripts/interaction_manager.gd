@@ -73,6 +73,9 @@ func _process(_delta):
 func _input(event):
 	if !event.is_action_pressed("ui_interact"):
 		return
+
+	Dialogic.handle_next_event()
+
 	if !idle:
 		return
 	var aarea := _active_area()

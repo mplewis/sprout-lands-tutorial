@@ -926,3 +926,7 @@ item_name = "Grain"
 count = 10
 
 [node name="UI" parent="." groups=["ui"] instance=ExtResource("9_70s11")]
+offset_left = -130.0
+offset_top = -137.0
+offset_right = -90.0
+offset_bottom = -97.0

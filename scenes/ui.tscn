@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://ovab2iuasvrb"]
+[gd_scene load_steps=3 format=3 uid="uid://ovab2iuasvrb"]
 
 [ext_resource type="Theme" uid="uid://bv3st3iksuyej" path="res://themes/theme.tres" id="1_tbc7w"]
 [ext_resource type="Script" path="res://scripts/ui_4x.gd" id="1_xudmw"]
-[ext_resource type="PackedScene" uid="uid://dt16pjc0lgxlr" path="res://scenes/chat.tscn" id="3_2oq5b"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -39,6 +38,3 @@ theme = ExtResource("1_tbc7w")
 text = "[Inventory]"
 
 [node name="UI_1x" type="CanvasLayer" parent="."]
-
-[node name="Chat" parent="UI_1x" instance=ExtResource("3_2oq5b")]
-visible = false
