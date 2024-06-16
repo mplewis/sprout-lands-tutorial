@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfv1rx75iwnoq"
-path="res://.godot/imported/Basic Charakter Actions.png-af7edafe7d9ab71a1443c99c48e160c2.ctex"
+uid="uid://xk1uwhecyilp"
+path="res://.godot/imported/Free_Chicken_House.png-9cd5e63f5c8025ef741c82cf304d26de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Basic Charakter Actions.png"
-dest_files=["res://.godot/imported/Basic Charakter Actions.png-af7edafe7d9ab71a1443c99c48e160c2.ctex"]
+source_file="res://assets/sprout_lands/objects/Free_Chicken_House.png"
+dest_files=["res://.godot/imported/Free_Chicken_House.png-9cd5e63f5c8025ef741c82cf304d26de.ctex"]
 
 [params]
 

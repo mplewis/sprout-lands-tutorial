@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://buubhlypqtsjv"
-path="res://.godot/imported/Basic_Grass_Biom_things.png-3fb40c67fdb267c8c2864ee9f5c19d45.ctex"
+uid="uid://b32qcml6r2xir"
+path="res://.godot/imported/Bitmask references 1.png-8b8ea72c4b48238e53a58227a98e7b41.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/Basic_Grass_Biom_things.png"
-dest_files=["res://.godot/imported/Basic_Grass_Biom_things.png-3fb40c67fdb267c8c2864ee9f5c19d45.ctex"]
+source_file="res://assets/sprout_lands/tilesets/Bitmask references 1.png"
+dest_files=["res://.godot/imported/Bitmask references 1.png-8b8ea72c4b48238e53a58227a98e7b41.ctex"]
 
 [params]
 

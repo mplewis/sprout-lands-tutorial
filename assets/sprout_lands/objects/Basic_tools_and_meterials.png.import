@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2gi7papqbbj8"
-path="res://.godot/imported/Free Chicken Sprites.png-0ed86a890dc6f0255598ebd9ddc2886c.ctex"
+uid="uid://cr3bc2plg5csf"
+path="res://.godot/imported/Basic_tools_and_meterials.png-e012899b24383b7d919575376217acc8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Free Chicken Sprites.png"
-dest_files=["res://.godot/imported/Free Chicken Sprites.png-0ed86a890dc6f0255598ebd9ddc2886c.ctex"]
+source_file="res://assets/sprout_lands/objects/Basic_tools_and_meterials.png"
+dest_files=["res://.godot/imported/Basic_tools_and_meterials.png-e012899b24383b7d919575376217acc8.ctex"]
 
 [params]
 

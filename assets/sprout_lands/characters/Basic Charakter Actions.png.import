@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://8qsx6212572k"
-path="res://.godot/imported/Bitmask references 2.png-d6a4d8072756ea2569189f3247cc7941.ctex"
+uid="uid://cfv1rx75iwnoq"
+path="res://.godot/imported/Basic Charakter Actions.png-853d57c731f7feb3ac24751111cce2ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/Bitmask references 2.png"
-dest_files=["res://.godot/imported/Bitmask references 2.png-d6a4d8072756ea2569189f3247cc7941.ctex"]
+source_file="res://assets/sprout_lands/characters/Basic Charakter Actions.png"
+dest_files=["res://.godot/imported/Basic Charakter Actions.png-853d57c731f7feb3ac24751111cce2ed.ctex"]
 
 [params]
 

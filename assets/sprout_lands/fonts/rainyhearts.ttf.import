@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://g1jp7brmyncf"
-path="res://.godot/imported/rainyhearts.ttf-d23ef0e7e6b1f2f39033923ad3b66140.fontdata"
+path="res://.godot/imported/rainyhearts.ttf-26ce3c78c9d12b829d48eb74b5fd9fbb.fontdata"
 
 [deps]
 
-source_file="res://assets/fonts/rainyhearts.ttf"
-dest_files=["res://.godot/imported/rainyhearts.ttf-d23ef0e7e6b1f2f39033923ad3b66140.fontdata"]
+source_file="res://assets/sprout_lands/fonts/rainyhearts.ttf"
+dest_files=["res://.godot/imported/rainyhearts.ttf-26ce3c78c9d12b829d48eb74b5fd9fbb.fontdata"]
 
 [params]
 

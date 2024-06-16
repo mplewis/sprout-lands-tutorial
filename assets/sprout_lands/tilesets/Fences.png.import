@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhrbxki67ja2c"
-path="res://.godot/imported/Egg_item.png-121bbf9e3ba6a95f66d05fef8cdecbc3.ctex"
+uid="uid://bqt8mnpb7djbw"
+path="res://.godot/imported/Fences.png-b0ad6c720a943ab5c82d0c8041895473.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/Egg_item.png"
-dest_files=["res://.godot/imported/Egg_item.png-121bbf9e3ba6a95f66d05fef8cdecbc3.ctex"]
+source_file="res://assets/sprout_lands/tilesets/Fences.png"
+dest_files=["res://.godot/imported/Fences.png-b0ad6c720a943ab5c82d0c8041895473.ctex"]
 
 [params]
 

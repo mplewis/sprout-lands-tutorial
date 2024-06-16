@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3bn20sa1raml"
-path="res://.godot/imported/Paths.png-5aadc1a02acd6d1bcb62615545a59b54.ctex"
+uid="uid://8qsx6212572k"
+path="res://.godot/imported/Bitmask references 2.png-1470cc66635928b01d247e665590ac38.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/Paths.png"
-dest_files=["res://.godot/imported/Paths.png-5aadc1a02acd6d1bcb62615545a59b54.ctex"]
+source_file="res://assets/sprout_lands/tilesets/Bitmask references 2.png"
+dest_files=["res://.godot/imported/Bitmask references 2.png-1470cc66635928b01d247e665590ac38.ctex"]
 
 [params]
 

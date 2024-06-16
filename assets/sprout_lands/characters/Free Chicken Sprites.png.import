@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://boeat33acrvq5"
-path="res://.godot/imported/Simple_Milk_and_grass_item.png-4ec2a39e2219378df5f36151e3d1317f.ctex"
+uid="uid://d2gi7papqbbj8"
+path="res://.godot/imported/Free Chicken Sprites.png-d45bfe5fcae772b141895afb55309bdd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/Simple_Milk_and_grass_item.png"
-dest_files=["res://.godot/imported/Simple_Milk_and_grass_item.png-4ec2a39e2219378df5f36151e3d1317f.ctex"]
+source_file="res://assets/sprout_lands/characters/Free Chicken Sprites.png"
+dest_files=["res://.godot/imported/Free Chicken Sprites.png-d45bfe5fcae772b141895afb55309bdd.ctex"]
 
 [params]
 

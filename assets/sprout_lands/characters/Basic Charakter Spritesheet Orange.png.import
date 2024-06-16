@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqt8mnpb7djbw"
-path="res://.godot/imported/Fences.png-0da320f5f45a2b470bc9273b234d43d9.ctex"
+uid="uid://c4nsq2vcn5m7g"
+path="res://.godot/imported/Basic Charakter Spritesheet Orange.png-205d3156f55bd185784132ba747b3f21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/Fences.png"
-dest_files=["res://.godot/imported/Fences.png-0da320f5f45a2b470bc9273b234d43d9.ctex"]
+source_file="res://assets/sprout_lands/characters/Basic Charakter Spritesheet Orange.png"
+dest_files=["res://.godot/imported/Basic Charakter Spritesheet Orange.png-205d3156f55bd185784132ba747b3f21.ctex"]
 
 [params]
 

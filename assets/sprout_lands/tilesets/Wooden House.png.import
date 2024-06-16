@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c4nsq2vcn5m7g"
-path="res://.godot/imported/Basic Charakter Spritesheet Orange.png-a973bd851c912b9749c650be4fbc5909.ctex"
+uid="uid://bveua7wu12oit"
+path="res://.godot/imported/Wooden House.png-7913dc800d519e715bd38b08bc92c449.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Basic Charakter Spritesheet Orange.png"
-dest_files=["res://.godot/imported/Basic Charakter Spritesheet Orange.png-a973bd851c912b9749c650be4fbc5909.ctex"]
+source_file="res://assets/sprout_lands/tilesets/Wooden House.png"
+dest_files=["res://.godot/imported/Wooden House.png-7913dc800d519e715bd38b08bc92c449.ctex"]
 
 [params]
 

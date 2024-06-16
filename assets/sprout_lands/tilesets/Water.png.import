@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://vqfsqsf0sq8r"
-path="res://.godot/imported/Free Cow Sprites.png-0fa1210921a44a19c0b5c439f19ed24f.ctex"
+uid="uid://basmmlu86yxm7"
+path="res://.godot/imported/Water.png-47bca39a0b6b0c28972d3f2b841605ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Free Cow Sprites.png"
-dest_files=["res://.godot/imported/Free Cow Sprites.png-0fa1210921a44a19c0b5c439f19ed24f.ctex"]
+source_file="res://assets/sprout_lands/tilesets/Water.png"
+dest_files=["res://.godot/imported/Water.png-47bca39a0b6b0c28972d3f2b841605ad.ctex"]
 
 [params]
 

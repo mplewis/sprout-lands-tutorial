@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b32qcml6r2xir"
-path="res://.godot/imported/Bitmask references 1.png-bb669c3a120d6fc73d3c1475f5929f67.ctex"
+uid="uid://d3fsft2omwad1"
+path="res://.godot/imported/Wood_Bridge.png-38813d9e4230b596f41f75ff144fd1b5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesets/Bitmask references 1.png"
-dest_files=["res://.godot/imported/Bitmask references 1.png-bb669c3a120d6fc73d3c1475f5929f67.ctex"]
+source_file="res://assets/sprout_lands/objects/Wood_Bridge.png"
+dest_files=["res://.godot/imported/Wood_Bridge.png-38813d9e4230b596f41f75ff144fd1b5.ctex"]
 
 [params]
 

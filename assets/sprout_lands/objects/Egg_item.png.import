@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cr3bc2plg5csf"
-path="res://.godot/imported/Basic_tools_and_meterials.png-b8fdfcd02418d3aed1fdd871f113c8d8.ctex"
+uid="uid://dhrbxki67ja2c"
+path="res://.godot/imported/Egg_item.png-973be7d03457ee4f19173d8aeb16edba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/objects/Basic_tools_and_meterials.png"
-dest_files=["res://.godot/imported/Basic_tools_and_meterials.png-b8fdfcd02418d3aed1fdd871f113c8d8.ctex"]
+source_file="res://assets/sprout_lands/objects/Egg_item.png"
+dest_files=["res://.godot/imported/Egg_item.png-973be7d03457ee4f19173d8aeb16edba.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq7xna6al3ifq"
-path="res://.godot/imported/Tools.png-d5100e2b9fd95bd5b63f6b2a927feb01.ctex"
+uid="uid://3bn20sa1raml"
+path="res://.godot/imported/Paths.png-6e9ad3d9dc6cb74a5147e2fdc4b71005.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Tools.png"
-dest_files=["res://.godot/imported/Tools.png-d5100e2b9fd95bd5b63f6b2a927feb01.ctex"]
+source_file="res://assets/sprout_lands/objects/Paths.png"
+dest_files=["res://.godot/imported/Paths.png-6e9ad3d9dc6cb74a5147e2fdc4b71005.ctex"]
 
 [params]
 

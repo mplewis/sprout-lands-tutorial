@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2q6nlhut3o6p"
-path="res://.godot/imported/Egg_And_Nest.png-fdb9084f53a036471befcf53a70e6b46.ctex"
+uid="uid://gkcgtmhycxty"
+path="res://.godot/imported/Tilled_Dirt.png-1a61d3a832847d9366213ed472c41839.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Egg_And_Nest.png"
-dest_files=["res://.godot/imported/Egg_And_Nest.png-fdb9084f53a036471befcf53a70e6b46.ctex"]
+source_file="res://assets/sprout_lands/tilesets/Tilled_Dirt.png"
+dest_files=["res://.godot/imported/Tilled_Dirt.png-1a61d3a832847d9366213ed472c41839.ctex"]
 
 [params]
 

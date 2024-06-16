@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://py0gadsicogu"
-path="res://.godot/imported/Basic Charakter Spritesheet.png-08c377e10cbb1ff3c9b1378fd085b9f7.ctex"
+uid="uid://boeat33acrvq5"
+path="res://.godot/imported/Simple_Milk_and_grass_item.png-1acf319ae58903ff9368b261758373d6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/characters/Basic Charakter Spritesheet.png"
-dest_files=["res://.godot/imported/Basic Charakter Spritesheet.png-08c377e10cbb1ff3c9b1378fd085b9f7.ctex"]
+source_file="res://assets/sprout_lands/objects/Simple_Milk_and_grass_item.png"
+dest_files=["res://.godot/imported/Simple_Milk_and_grass_item.png-1acf319ae58903ff9368b261758373d6.ctex"]
 
 [params]
 

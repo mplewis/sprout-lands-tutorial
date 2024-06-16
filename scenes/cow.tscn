@@ -1,7 +1,7 @@
 [gd_scene load_steps=17 format=3 uid="uid://buuxjkp60hncq"]
 
 [ext_resource type="Script" path="res://scripts/cow.gd" id="1_31mg2"]
-[ext_resource type="Texture2D" uid="uid://vqfsqsf0sq8r" path="res://assets/characters/Free Cow Sprites.png" id="2_43uro"]
+[ext_resource type="Texture2D" uid="uid://vqfsqsf0sq8r" path="res://assets/sprout_lands/characters/Free Cow Sprites.png" id="2_43uro"]
 [ext_resource type="PackedScene" uid="uid://cer6254tcgimy" path="res://scenes/interaction_area.tscn" id="3_2nvfc"]
 [ext_resource type="Theme" uid="uid://bv3st3iksuyej" path="res://themes/theme.tres" id="4_0w3yd"]
 
