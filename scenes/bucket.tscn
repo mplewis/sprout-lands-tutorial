@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://iwy7isdul2yg"]
+
+[ext_resource type="Texture2D" uid="uid://bq7xna6al3ifq" path="res://assets/sprout_lands/characters/Tools.png" id="1_m3jo4"]
+[ext_resource type="Script" path="res://scripts/bucket.gd" id="1_samx2"]
+[ext_resource type="Theme" uid="uid://bv3st3iksuyej" path="res://themes/theme.tres" id="2_obuup"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qaf2f"]
+size = Vector2(14, 8)
+
+[node name="Bucket" type="Area2D"]
+y_sort_enabled = true
+collision_layer = 5
+collision_mask = 4
+script = ExtResource("1_samx2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_m3jo4")
+hframes = 6
+vframes = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_qaf2f")
+
+[node name="Clang" type="Label" parent="."]
+offset_left = 7.0
+offset_top = -13.0
+offset_right = 47.0
+offset_bottom = 10.0
+theme = ExtResource("2_obuup")
+text = "clang"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(-1, 1)
+shape = SubResource("RectangleShape2D_qaf2f")
